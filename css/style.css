@@ -94,7 +94,7 @@ h2 {
   justify-content: center;
 }
 
-.work h1{
+.work h2{
   padding-top: 100px;
   padding-bottom: 50px;
   font-size: 28px;
@@ -198,6 +198,12 @@ h2 {
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
+}
+
+footer {
+  display: block;
+  margin-top: 10%;
+  padding: 10px;
 }
 
 footer *{
@@ -352,7 +358,71 @@ footer *{
   padding:20px;
 }
 
-.about-text-container h1 {
+.about-text-container h2 {
   padding-bottom: 40px;
   font-size: 28px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/myday_parallax.png");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption{
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  max-width: 30%;
+  text-align: left;
+  color: #000;
+}
+
+.caption h2{
+  font-weight: 700;
+  font-size: 5em;
+  color: #74A2D6;
+  padding-bottom: 20px;
+}
+
+.caption p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: grey;
+  padding-top: 20px;
+}
+
+.scrolling-content{
+  height:1000px;
+  background-color:white;
+  font-size:15px;
+  line-height: 26px;
+  color: grey;
+  padding: 10%;
+}
+
+.scrolling-content img {
+  display: block;
+  max-width: 80%;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrolling-content h2 {
+  display: block;
+  margin:10%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #74A2D6;
 }
