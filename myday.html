@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416033-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133416033-2');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joy Huang | My Day</title>
@@ -10,23 +20,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416033-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-133416033-2');
-  </script>
-
   <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+
     <!-- Header with Nav-->
     <div class="header_bar sticky" id="myHeader">
 
       <header class="header_left">
         <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy_logo"></a>
-        <a href="index.html"><h1>Joy Huang</h1></a>
+        <h1>Joy Huang</h1>
       </header>
 
       <nav class="header_right">
@@ -39,27 +41,26 @@
 
     </div>
 
-    <!-- Hero Image -->
     <main>
 
       <div class="parallax">
-        <div class="caption">
-          <h1>My Day</h1>
+        <div class="caption" tabindex="0">
+          <h2>My Day</h2>
           <p>a schedule and communication app for children with autism spectrum and their caregivers</p>
         </div>
       </div>
 
-      <div class="scrolling-content">
-        <h2>Project Overview</h2>
-        <p>
+      <div class="scrolling-content" id="main">
+        <h2 tabindex="0">Project Overview</h2>
+        <p tabindex="0">
           My day is a visual schedule app to help children with autism spectrum on both phone and  smartwatch. It provides autistic children with visual cues of daily activities and allows parents to guide and monitor children's growth.<br>
           <br>
           While encouraging children to communicate with adults about their emotions and needs, it also encourages caregivers to provide early intervention of behavioral and social support for children.<br>
         </p>
 
-        <img src="images/myday_overview.png" alt="myday solution overview picture">
+        <img src="images/myday_overview.png" alt="myday solution overview picture" tabindex="0">
 
-        <p>
+        <p tabindex="0">
           The most recent study shows that 1 in 59 children was identified with ASD (Autism Spectrum Disorder) in the US. These children usually have difficulties on social interaction, transitions between activities, regulating emotions, etc.<br>
           <br>
           The idea of creating inclusive classrooms are now widely used in the US. However, autistic children are still struggling because of lack of professional knowledge of caregivers, low teacher-student rate in classrooms, etc.<br>
@@ -67,7 +68,7 @@
           Possible neglect on children's special needs will make their life even harder and harmful for their future developments. So, How can we help?<br>
         </p>
 
-        <h2>Thank you for Scrolling!</h2>
+        <h2 tabindex="0">Thank you for Scrolling!</h2>
       </div>
 
     </main>

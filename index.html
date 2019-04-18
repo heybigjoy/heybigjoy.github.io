@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416033-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133416033-2');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joy Huang | Home</title>
@@ -10,23 +20,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416033-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-133416033-2');
-  </script>
-
   <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+
     <!-- Header with Nav-->
     <div class="header_bar sticky" id="myHeader">
 
       <header class="header_left">
         <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy_logo"></a>
-        <a href="index.html"><h1>Joy Huang</h1></a>
+        <h1>Joy Huang</h1>
       </header>
 
       <nav class="header_right">
@@ -40,9 +42,9 @@
     </div>
 
     <!-- Hero Image -->
-    <main>
+    <main id="main">
       <div class="hero-image">
-        <div class="hero-text">
+        <div class="hero-text" tabindex="0">
           <h1>👋 Hi, I am Joy.</H1>
           <h1 id='demo'></h1>
         </div>
@@ -63,69 +65,69 @@
 
 
         <div class="container">
-          <div class="filterDiv ux">
-            <div class="side" id="myday"></div>
-            <div class="side back" style="background: #77A8FF">
+          <a class="filterDiv ux" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/my_day_cover.png)"></div>
+            <div class="side back" style="background: #F8F8FF">
               <h3>My Day: Schedule for Autistic Kids</h3>
               <p>UX/UI Design</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv ux">
-            <div class="side"><img src="images/novel_effect_cover.png" alt="Novel Effect App"></div>
-              <div class="side back" style="background: #FFCD74">
+          <a class="filterDiv ux"  tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/novel_effect_cover.png)"></div>
+              <div class="side back" style="background: #EAF4FF">
               <h3>Novel Effect Redesign</h3>
               <p>UX/UI Design</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv visual">
-            <div class="side"><img src="images/camelia_cover.png" alt="Camelia H5"></div>
-            <div class="side back" style="background: #DF7B3F">
+          <a class="filterDiv visual" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/camelia_cover.png)"></div>
+            <div class="side back" style="background: #FFFDF4">
               <h3>Camelia Design</h3>
               <p>H5/Graphic Design</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv visual">
-            <div class="side"><img src="images/camelia_cover.png" alt="DSSA Logo"></div>
-            <div class="side back" style="background: #DF7B3F">
-              <h3>DSSA</h3>
-              <p>Brand Design</p>
+          <a class="filterDiv visual" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/dose_cover.png)"></div>
+            <div class="side back" style="background: #FFFFFF" tabindex="0">
+              <h3>DOSE</h3>
+              <p>Graphic/Brand Design</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv ux">
-            <div class="side"><img src="images/camelia_cover.png" alt="Learning A-Z"></div>
-            <div class="side back" style="background: #DF7B3F">
+          <a class="filterDiv ux" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/learningaz_cover.png)"></div>
+            <div class="side back" style="background: #FEFFF2" tabindex="0">
               <h3>Learning A-Z</h3>
               <p>UX/UI Design</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv artwork">
-            <div class="side"><img src="images/camelia_cover.png" alt="Paper Play"></div>
-            <div class="side back" style="background: #DF7B3F">
-              <h3>Paper Play</h3>
-              <p>Paper Sculpture Artwork</p>
+          <a class="filterDiv artwork" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/paper_play_cover.png)"></div>
+            <div class="side back" style="background: #0C0C0C">
+              <h3 style="color:white">Paper Play</h3>
+              <p style="color:white">Paper Sculpture Artwork</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv artwork">
-            <div class="side"><img src="images/camelia_cover.png" alt="Rome Map Stamp"></div>
-            <div class="side back" style="background: #DF7B3F">
+          <a class="filterDiv artwork" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/rome_map_cover.png)"></div>
+            <div class="side back" style="background: #E6ECE0">
               <h3>Rome Map Stamp</h3>
               <p>Hand-carving Stamp</p>
             </div>
-          </div>
+          </a>
 
-          <div class="filterDiv artwork">
-            <div class="side"><img src="images/camelia_cover.png" alt="Book Sculpture"></div>
-            <div class="side back" style="background: #DF7B3F">
+          <a class="filterDiv artwork" tabindex="0" href="myday.html">
+            <div class="side" style="background-image: url(images/paper_sculpture_cover.png)"></div>
+            <div class="side back" style="background: #FFFFFF">
               <h3>Book Sculpture</h3>
               <p>Paper Sculpture</p>
             </div>
-          </div>
+          </a>
 
         </div>
 
@@ -206,7 +208,10 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
+        //console.log(current[0].className);
+        current[1].className = current[1].className.replace(" active", "");
+        //console.log(current);
+        //console.log(current[0].className);
         this.className += " active";
       });
     }
