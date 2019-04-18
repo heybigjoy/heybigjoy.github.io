@@ -239,6 +239,11 @@ footer *{
   margin-bottom: 10px;
 }
 
+.social a{
+  font-size: 18px;
+  padding-right: 10px;
+}
+
 .social {
   display: flex;
   flex-direction: row;
