@@ -454,17 +454,29 @@ footer *{
 /*For mobiles*/
 @media only screen and (max-width: 600px) {
   .header_bar {
-    display: inline-block;
-    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:0;
+    background-color:white;
+    z-index: 999;
+    height:200px;
+    text-align: center;
   }
 
   .header_left {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
   }
 
-  .header_right {
-    display: inline-block;
+  .header_right ul{
+    text-align: center;
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%;
   }
 
   .container {
@@ -472,30 +484,48 @@ footer *{
     padding-left: 5%;
     padding-right: 5%;
     cursor: pointer;
-    height:1200px;
+    height:1000px;
     perspective: 600;
     margin-top: 2%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
     /*max-width: 1100px;
     position: relative;*/
   }
 
-  .filterDive {
+  .filterDiv {
     margin-left: auto;
     margin-right: auto;
   }
 
   .filterDiv .side {
     max-height: 80%;
-    max-width: 40%;
+    max-width: 100%;
   }
 
   .filterDiv .back {
     max-height: 80%;
-    max-width: 40%;
+    max-width: 100%;
   }
+
+  footer *{
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  footer p{
+    margin-top: 10px;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin-top: 200px;
+    max-width: 300px;
+  }
+
 
 
 /*For tablets*/
@@ -504,38 +534,5 @@ footer *{
 
 /*For desktop*/
 @media only screen and (min-width: 992px){
-  .logo{
-    width:10%;
-    height:auto;
-    float:left;
-  }
-
-  header {
-    font-size: 1em;
-    display:inline-block;
-    text-align: left;
-    margin: 10px 15px;
-    text-decoration:none;
-  }
-
-  nav {
-    overflow: hidden;
-  }
-
-  nav a {
-    float: right;
-  }
-
-  .about-me-pic{
-    width:50%;
-    margin: 20px;
-    float:left;
-  }
-
-  .about-me-text{
-    display:block;
-    margin-top: 100px;
-    text-align: left;
-  }
 
 }
