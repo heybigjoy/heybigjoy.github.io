@@ -87,13 +87,6 @@ a.active {
   font-style: italic;
 }
 
-/*.hero-image{
-  background-image: url("../images/background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}*/
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -454,4 +447,95 @@ footer *{
   font-size: 50px;
   font-weight: 700;
   color: #09287c;
+}
+
+
+
+/*For mobiles*/
+@media only screen and (max-width: 600px) {
+  .header_bar {
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .header_left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header_right {
+    display: inline-block;
+  }
+
+  .container {
+    display:grid;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    height:1200px;
+    perspective: 600;
+    margin-top: 2%;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    /*max-width: 1100px;
+    position: relative;*/
+  }
+
+  .filterDive {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filterDiv .side {
+    max-height: 80%;
+    max-width: 40%;
+  }
+
+  .filterDiv .back {
+    max-height: 80%;
+    max-width: 40%;
+  }
+
+
+/*For tablets*/
+@media only screen and (min-width: 600px) {
+
+
+/*For desktop*/
+@media only screen and (min-width: 992px){
+  .logo{
+    width:10%;
+    height:auto;
+    float:left;
+  }
+
+  header {
+    font-size: 1em;
+    display:inline-block;
+    text-align: left;
+    margin: 10px 15px;
+    text-decoration:none;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  nav a {
+    float: right;
+  }
+
+  .about-me-pic{
+    width:50%;
+    margin: 20px;
+    float:left;
+  }
+
+  .about-me-text{
+    display:block;
+    margin-top: 100px;
+    text-align: left;
+  }
+
 }
