@@ -35,7 +35,7 @@
         <a class="active" href="index.html">Work</a>
         <a href="illustrations.html">Illustration</a>
         <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">Menu
           <i class="fa fa-bars"></i>
         </a>
       </nav>
@@ -69,19 +69,20 @@
       <p>Design & Code © 2019 by Joy Huang</p>
     </footer>
 
+    <script>
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function hamburgerMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "right") {
+          x.className += " responsive";
+        } else {
+          x.className = "right";
+        }
+      }
+    </script>
+
   </body>
 
-  <script>
-
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function hamburgerMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "right") {
-        x.className += " responsive";
-      } else {
-        x.className = "right";
-      }
-    }
-  </script>
 
 </html>
