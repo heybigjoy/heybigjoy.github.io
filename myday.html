@@ -24,19 +24,20 @@
     <a class="skip-main" href="#main">Skip to main content</a>
 
     <!-- Header with Nav-->
-    <div class="header_bar sticky" id="myHeader">
+    <div class="header_bar sticky">
 
-      <header class="header_left">
-        <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy_logo"></a>
+      <header class="left">
+        <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy's logo"></a>
         <h1>Joy Huang</h1>
       </header>
 
-      <nav class="header_right">
-        <ul>
-          <li><a class="active" href="index.html">Work</a></li>
-          <li><a href="illustrations.html">Illustration</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <nav class="right" id="myTopnav">
+        <a class="active" href="index.html">Work</a>
+        <a href="illustrations.html">Illustration</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
 
     </div>
@@ -67,8 +68,6 @@
           <br>
           Possible neglect on children's special needs will make their life even harder and harmful for their future developments. So, How can we help?<br>
         </p>
-
-        <h2 tabindex="0">Thank you for Scrolling!</h2>
       </div>
 
     </main>
@@ -84,6 +83,19 @@
       </div>
       <p>Design & Code © 2019 by Joy Huang</p>
     </footer>
+
+    <script>
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function hamburgerMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "right") {
+          x.className += " responsive";
+        } else {
+          x.className = "right";
+        }
+      }
+    </script>
 
   </body>
 

@@ -24,26 +24,27 @@
     <a class="skip-main" href="#main">Skip to main content</a>
 
     <!-- Header with Nav-->
-    <div class="header_bar sticky" id="myHeader">
+    <div class="header_bar sticky">
 
-      <header class="header_left">
-        <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy_logo"></a>
+      <header class="left">
+        <a href="index.html"><img class="logo" src="images/fav_icon.png" alt="joy's logo"></a>
         <h1>Joy Huang</h1>
       </header>
 
-      <nav class="header_right">
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a class="active" href="illustrations.html">Illustration</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <nav class="right" id="myTopnav">
+        <a class="active" href="index.html">Work</a>
+        <a href="illustrations.html">Illustration</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
 
     </div>
 
     <main>
-      <div class="work" id="main">
-        <h1>My Illustrations</h1>
+      <div class="illustration" id="main">
+        <h2>My Illustrations</h2>
         <p>I love to express my ideas and thoughts through visual languages. Here are my illustration works for both business uses and personal explorations</p>
       </div>
 
@@ -170,6 +171,19 @@
       </div>
       <p>Design & Code © 2019 by Joy Huang</p>
     </footer>
+
+    <script>
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function hamburgerMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "right") {
+          x.className += " responsive";
+        } else {
+          x.className = "right";
+        }
+      }
+    </script>
 
   </body>
 

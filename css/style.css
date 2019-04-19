@@ -5,6 +5,8 @@ header img{
 
 * {
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 a {
@@ -39,47 +41,79 @@ a.skip-main:focus, a.skip-main:active {
   z-index:1000;
 }
 
+.header_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  z-index: 999;
+}
+
+.left {
+  margin-right: auto;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  float:left;
+  align-items: center;
+}
+
+.left img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  padding:10px;
+}
+
+.left h1{
+  font-size: 25px;
+  text-align: left;
+  padding:10px;
+  margin: 0;
+}
+
+.right {
+  margin-right: 5%;
+  margin-left: auto;
+  background-color: white;
+  overflow: hidden;
+  display:flex;
+  flex-direction: row;
+  float:right;
+}
+
+/* Style the links inside the navigation bar */
+.right a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.right a:hover {
+  text-decoration: underline;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: white;
+  color: black;
+  font-size: 700;
+  font-style: italic;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.right .icon {
+  display: none;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
-}
-
-
-.header_bar{
-  display: flex;
-  flex-direction: row;
-  height: 80px;
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-  align-items: center;
-  z-index: 999;
-}
-
-.header_left {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.5em;
-  padding-left: 5%;
-}
-
-.header_left h1{
-  padding-top: 15px;
-}
-
-.header_right {
-  margin-left: auto;
-  padding-right: 3%;
-}
-
-.header_right *{
-  display: flex;
-  align-items: baseline;
-  flex-direction: row;
-  list-style-type: none;
-  font-size: 18px;
-  padding:10px 10px;
-  text-decoration: none;
 }
 
 a.active {
@@ -104,7 +138,7 @@ a.active {
 h2 {
   text-align: center;
   display: block;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -122,9 +156,19 @@ h2 {
 .work h2{
   padding-top: 100px;
   padding-bottom: 50px;
-  font-size: 28px;
   text-align: center;
 }
+
+.illustration{
+  padding:100px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.illustration h2 {
+  padding-bottom: 50px;
+}
+
 
 .container {
   display:grid;
@@ -199,6 +243,7 @@ h2 {
 .btn {
   border: none;
   outline: none;
+  background-color: white;
   padding: 20px 20px;
   cursor: pointer;
   font-size: 18px;
@@ -221,8 +266,9 @@ h2 {
 
 footer {
   display: block;
-  margin-top: 10%;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 20px;
+
 }
 
 footer *{
@@ -454,29 +500,42 @@ footer *{
 /*For mobiles*/
 @media only screen and (max-width: 600px) {
   .header_bar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left:0;
-    background-color:white;
-    z-index: 999;
-    height:200px;
-    text-align: center;
+    align-items: flex-start;
+  }
+  .right {
+    display:block;
+    float:right;
   }
 
-  .header_left {
-    display: flex;
-    flex-direction: row;
-    margin-left: 30%;
-    margin-right: 30%;
-    align-items: center;
+  .right a {
+    display: none;
   }
 
-  .header_right ul{
-    text-align: center;
+  .right a.icon {
+    padding-top: 25px;
+    float: right;
     display: block;
-    margin-left: 40%;
-    margin-right: 40%;
+  }
+
+  .right.responsive {
+    position: relative;
+  }
+
+  .right.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+
+  .right.responsive a:first-child {
+    margin-top: 40px;
+  }
+
+  .right.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
   }
 
   .container {
@@ -509,14 +568,20 @@ footer *{
     max-width: 100%;
   }
 
-  footer *{
+  footer * {
     justify-content: center;
     text-align: center;
     padding: 0px;
+    padding-top: 10px;
     margin-bottom: 0px;
   }
 
+  .social a {
+    font-size: 10px;
+  }
+
   footer p{
+    font-size: 10px;
     margin-top: 10px;
   }
 
@@ -526,6 +591,40 @@ footer *{
     max-width: 300px;
   }
 
+  .mySlides img{
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .about {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text-container{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 36px;
+    padding:0;
+  }
+
+  .about-text-container h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 28px;
+  }
 
 
 /*For tablets*/
